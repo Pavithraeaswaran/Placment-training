@@ -1,0 +1,23 @@
+ #include<bits/stdc++.h>
+ using namespace std;
+ int main(){
+     int n;
+     int m;
+     cin>>n;
+     cin>>m;
+     int k1=1;
+     int k2=2;
+     for(int i=1;i<=n;i++){
+         for(int j=1;j<=i;j++){
+             if(i%2!=0){
+                 cout<<k1<<" ";
+                 k1+=2;
+             }
+             else{
+                 cout<<k2<<" ";
+                 k2+=2;
+             }
+         }
+         cout<<endl;
+     }
+ }
